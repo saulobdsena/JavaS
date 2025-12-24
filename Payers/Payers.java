@@ -2,13 +2,28 @@ package Payers;
 
 public abstract class Payers {
     String name;
-    Double annualIncome;
+    Double anualIncome;
 
-    public Payers(String name, Double annualIncome) {
+    public Payers(String name, Double anualIncome) {
         this.name = name;
-        this.annualIncome = annualIncome;
+        this.anualIncome = anualIncome;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Double getAnualIncome() {
+        return anualIncome;
+    }
+
+    public void setAnualIncome(Double annualIncome) {
+        this.anualIncome = annualIncome;
     }
 
     public abstract Double totalTax();
-
 }
